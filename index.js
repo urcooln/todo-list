@@ -64,7 +64,7 @@ $(document).ready(function(){
       var markTaskComplete = function (id) {
         $.ajax({
        type: 'PUT',
-          url: 'https://fewd-todolist-api.onrender.com/tasks/' + id + '/mark_complete?api_key=2',
+          url: 'https://fewd-todolist-api.onrender.com/tasks/' + id + '/mark_complete?api_key=1',
           dataType: 'json',
           success: function (response, textStatus) {
             getAndDisplayAllTasks();
@@ -85,7 +85,7 @@ $(document).ready(function(){
        var markTaskActive = function (id) {
         $.ajax({
        type: 'PUT',
-          url: 'https://fewd-todolist-api.onrender.com/tasks/' + id + '/mark_active?api_key=2',
+          url: 'https://fewd-todolist-api.onrender.com/tasks/' + id + '/mark_active?api_key=1',
           dataType: 'json',
           success: function (response, textStatus) {
             getAndDisplayAllTasks();
